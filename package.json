@@ -1,0 +1,42 @@
+{
+  "name": "slickcomment-react",
+  "version": "1.0.0",
+  "description": "React wrapper for SlickComment widgets",
+  "author": "SlickComment.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.2",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-replace": "^3.0.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rollup": "^2.55.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-serve": "^1.1.0",
+    "sc-comment-widget": "file:../comment-widget/build"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "^15.6.1 || ^16.0.0 || ^17.0.0",
+    "react-dom": "^15.6.1 || ^16.0.0 || ^17.0.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/es/index.js",
+  "jsnext:main": "dist/es/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
+}
