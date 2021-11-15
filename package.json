@@ -1,6 +1,6 @@
 {
   "name": "@slickcomment/slickcomment-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React wrapper for SlickComment widgets",
   "author": "SlickComment.com",
   "license": "MIT",
