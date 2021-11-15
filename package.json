@@ -1,5 +1,5 @@
 {
-  "name": "slickcomment-react",
+  "name": "@slickcomment/slickcomment-react",
   "version": "1.0.0",
   "description": "React wrapper for SlickComment widgets",
   "author": "SlickComment.com",
@@ -21,8 +21,7 @@
     "rollup": "^2.55.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-serve": "^1.1.0",
-    "sc-comment-widget": "file:../comment-widget/build"
+    "rollup-plugin-serve": "^1.1.0"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -38,5 +37,22 @@
   "engines": {
     "node": ">=8",
     "npm": ">=5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slickcomment/slickcomment-react.git"
+  },
+  "keywords": [
+    "comment",
+    "system",
+    "slickcomment",
+    "comment",
+    "widget",
+    "comment",
+    "section"
+  ],
+  "bugs": {
+    "url": "https://github.com/slickcomment/slickcomment-react/issues"
+  },
+  "homepage": "https://github.com/slickcomment/slickcomment-react#readme"
 }

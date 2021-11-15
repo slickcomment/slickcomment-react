@@ -5,10 +5,10 @@ import {defaultSdkUrl} from './constants';
 
 class WidgetDiscussion extends AbstractWidget {
   renderWidget() {
-    window.SlickComment.renderDiscussion({
-      ...this.props.config,
-      containerElement: this.ref.current,
-    })
+    console.log(window.SlickComment);
+    window.SlickComment.renderDiscussion(Object.assign(this.props.config, {
+      containerElement: this.ref.current
+    }))
       .then((instance) => {
         this.widget = instance;
         this.props.onReady(instance);
