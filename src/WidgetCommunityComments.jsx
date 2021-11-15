@@ -5,7 +5,6 @@ import {defaultSdkUrl} from './constants';
 
 class WidgetCommunityComments extends AbstractWidget {
   renderWidget() {
-    console.log(window.SlickComment);
     window.SlickComment.renderCommunityComments(Object.assign(this.props.config, {
       containerElement: this.ref.current
     }))
