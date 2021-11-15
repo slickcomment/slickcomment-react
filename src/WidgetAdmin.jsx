@@ -5,10 +5,9 @@ import {defaultSdkUrl} from './constants';
 
 class WidgetAdmin extends AbstractWidget {
   renderWidget() {
-    window.SlickComment.renderAdminWidget({
-      ...this.props.config,
-      containerElement: this.ref.current,
-    })
+    window.SlickComment.renderAdminWidget(Object.assign(this.props.config, {
+      containerElement: this.ref.current
+    }))
       .then((instance) => {
         this.widget = instance;
         this.props.onReady(instance);
