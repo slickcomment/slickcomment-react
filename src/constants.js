@@ -1,1 +1,1 @@
-export const defaultSdkUrl = 'https://slickcomment.com/sdk/comment-widget.js';
+export const defaultSdkUrl = 'https://slickcomment.com/js/sdk.js';
