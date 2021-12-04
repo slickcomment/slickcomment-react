@@ -21,6 +21,7 @@ WidgetCommunityComments.propTypes = {
 };
 
 WidgetCommunityComments.defaultProps = {
+  config: {},
   scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},

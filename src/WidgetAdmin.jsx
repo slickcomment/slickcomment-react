@@ -21,6 +21,7 @@ WidgetAdmin.propTypes = {
 };
 
 WidgetAdmin.defaultProps = {
+  config: {},
   scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},

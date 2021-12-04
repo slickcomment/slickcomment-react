@@ -21,6 +21,7 @@ WidgetUserComments.propTypes = {
 };
 
 WidgetUserComments.defaultProps = {
+  config: {},
   scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},

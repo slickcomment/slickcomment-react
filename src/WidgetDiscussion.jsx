@@ -21,6 +21,7 @@ WidgetDiscussion.propTypes = {
 };
 
 WidgetDiscussion.defaultProps = {
+  config: {},
   scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},
