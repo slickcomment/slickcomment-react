@@ -3,9 +3,9 @@ import React from 'react';
 import AbstractWidget from './AbstractWidget.jsx';
 import {defaultSdkUrl} from './constants';
 
-class WidgetAdmin extends AbstractWidget {
+class WidgetModeration extends AbstractWidget {
   renderWidget() {
-    this.widget = window.SlickComment.renderAdminWidget(Object.assign(this.props.config, {
+    this.widget = window.SlickComment.renderModeration(Object.assign(this.props.config, {
       containerElement: this.ref.current
     }));
 
@@ -13,18 +13,18 @@ class WidgetAdmin extends AbstractWidget {
   }
 }
 
-WidgetAdmin.propTypes = {
+WidgetModeration.propTypes = {
   config: PropTypes.object,
   scriptSrc: PropTypes.string,
   onReady: PropTypes.func,
   onChange: PropTypes.func
 };
 
-WidgetAdmin.defaultProps = {
+WidgetModeration.defaultProps = {
   config: {},
   scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},
 };
 
-export default WidgetAdmin;
+export default WidgetModeration;
