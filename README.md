@@ -41,6 +41,7 @@ function App() {
         <SlickComment.WidgetModeration
             config={{
                 communityId: 'REPLACE WITH YOUR VALUE',
+                userSsoId: 'REPLACE WITH CORRECT VALUE',
                 getUserSsoToken: () => {
                     // TODO: implement this
                 }
