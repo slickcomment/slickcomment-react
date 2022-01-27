@@ -8,7 +8,7 @@ const SlickComment = {
   WidgetDiscussion,
   WidgetUserComments,
   WidgetCommunityComments,
-  WidgetAdmin: WidgetModeration,
+  WidgetModeration,
   CommentCount,
 };
 

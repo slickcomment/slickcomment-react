@@ -15,14 +15,12 @@ class WidgetCommunityComments extends AbstractWidget {
 
 WidgetCommunityComments.propTypes = {
   config: PropTypes.object,
-  scriptSrc: PropTypes.string,
   onReady: PropTypes.func,
   onChange: PropTypes.func
 };
 
 WidgetCommunityComments.defaultProps = {
   config: {},
-  scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},
 };

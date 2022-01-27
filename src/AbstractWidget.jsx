@@ -1,5 +1,6 @@
 import * as PropTypes from 'prop-types';
 import React from 'react';
+import {defaultSdkUrl} from './constants';
 import helpers from './helpers';
 
 class AbstractWidget extends React.Component {
@@ -18,7 +19,7 @@ class AbstractWidget extends React.Component {
     }
 
     if (!window.SlickComment) {
-      helpers.insertScriptIfNotExist(this.props.scriptSrc);
+      helpers.insertScriptIfNotExist(this.props.scriptSrc || defaultSdkUrl);
     }
 
     this.interval = setInterval(() => {
@@ -60,7 +61,6 @@ class AbstractWidget extends React.Component {
 
 AbstractWidget.propTypes = {
   config: PropTypes.object,
-  scriptSrc: PropTypes.string,
   onReady: PropTypes.func,
   onChange: PropTypes.func
 };

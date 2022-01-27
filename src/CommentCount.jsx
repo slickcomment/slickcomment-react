@@ -25,7 +25,6 @@ CommentCount.defaultProps = {
 
 CommentCount.propTypes = {
   config: PropTypes.object,
-  scriptSrc: PropTypes.string,
 };
 
 export default CommentCount;

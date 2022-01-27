@@ -15,14 +15,12 @@ class WidgetModeration extends AbstractWidget {
 
 WidgetModeration.propTypes = {
   config: PropTypes.object,
-  scriptSrc: PropTypes.string,
   onReady: PropTypes.func,
   onChange: PropTypes.func
 };
 
 WidgetModeration.defaultProps = {
   config: {},
-  scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},
 };

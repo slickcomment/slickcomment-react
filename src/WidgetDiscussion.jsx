@@ -15,14 +15,12 @@ class WidgetDiscussion extends AbstractWidget {
 
 WidgetDiscussion.propTypes = {
   config: PropTypes.object,
-  scriptSrc: PropTypes.string,
   onReady: PropTypes.func,
   onChange: PropTypes.func
 };
 
 WidgetDiscussion.defaultProps = {
   config: {},
-  scriptSrc: defaultSdkUrl,
   onReady: () => {},
   onChange: () => {},
 };
