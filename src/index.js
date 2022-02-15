@@ -12,4 +12,3 @@ export * from './WidgetModeration.jsx';
 
 export {default as CommentCount} from './CommentCount.jsx';
 export * from './CommentCount.jsx';
-

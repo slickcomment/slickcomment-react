@@ -1,11 +1,10 @@
 import * as PropTypes from 'prop-types';
 import React from 'react';
 import AbstractWidget from './AbstractWidget.jsx';
-import {defaultSdkUrl} from './constants';
 
-class WidgetCommunityComments extends AbstractWidget {
+class WidgetSiteComments extends AbstractWidget {
   renderWidget() {
-    this.widget = window.SlickComment.renderCommunityComments(Object.assign(this.props.config, {
+    this.widget = window.SlickComment.renderSiteComments(Object.assign(this.props.config, {
       containerElement: this.ref.current
     }));
 
@@ -13,16 +12,16 @@ class WidgetCommunityComments extends AbstractWidget {
   }
 }
 
-WidgetCommunityComments.propTypes = {
+WidgetSiteComments.propTypes = {
   config: PropTypes.object,
   onReady: PropTypes.func,
   onChange: PropTypes.func
 };
 
-WidgetCommunityComments.defaultProps = {
+WidgetSiteComments.defaultProps = {
   config: {},
   onReady: () => {},
   onChange: () => {},
 };
 
-export default WidgetCommunityComments;
+export default WidgetSiteComments;

@@ -1,7 +1,6 @@
 import * as PropTypes from 'prop-types';
 import React from 'react';
 import AbstractWidget from './AbstractWidget.jsx';
-import {defaultSdkUrl} from './constants';
 
 class WidgetDiscussion extends AbstractWidget {
   renderWidget() {
